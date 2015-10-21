@@ -1,0 +1,30 @@
+.menu {
+  margin: 0 0 40px;
+
+  @include bp(medium) {
+    margin: 0;
+  }
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+}
+
+.menu-link {
+  margin: 0;
+  padding: 10px 0;
+  display: block;
+  color: $black;
+  text-decoration: none;
+  font-weight: 500;
+}

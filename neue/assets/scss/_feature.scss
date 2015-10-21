@@ -1,19 +1,35 @@
 .feature-wrap {
   width: 100%;
-  padding: 0 0.5rem 0;
+  background: $black;
+  @include clearfix;
+}
+
+.feature__image,
+.feature__content {
+  display: block;
+  height: 600px;
 
   @include bp(medium) {
-    padding: 3rem 0 0;
+    width: 50%;
+    height: 600px;
+    float: left;
+    display: block;
   }
 }
 
+.feature__image {
+  background: url('../img/square.jpg') center no-repeat;
+  background-size: cover;
+}
+
 .feature--intro {
-  background-color: white;
+
 }
 
 .feature--cross-section {
   display: none;
-  margin-bottom: 3rem;
+  padding: 2rem;
+  background: $gold;
 
   @include bp(medium) {
     display: block;
@@ -25,49 +41,20 @@
 }
 
 .feature {
-  padding: 2rem;
-  background: url('../img/building.svg') no-repeat 20px 0;
-  @include fs(16px);
-  line-height: 1.3rem;
-
-  @include bp(medium) {
-    height: 60vh;
-  }
+  position: relative;
+  top: 50%;
+  @include transform(translateY(-50%));
+  padding: 2rem 4rem;
+  @include fs(18px);
+  line-height: 1.4rem;
+  color: white;
 }
 
-.feature__left, .feature__right {
-  @include span-columns(12);
-  height: 100%;
-
-  @include bp(medium) {
-    @include span-columns(6);
-    display: inline-flex;
-  }
-
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.feature__left {
-  text-align: justify;
-}
-
-.feature__right {
-  visibility: hidden;
-  display: none;
-
-  @include bp(medium) {
-    display: inline-flex;
-    visibility: visible;
-  }
-}
 
 .feature__heading {
- @include fw(bold);
  font-style: italic;
  color: $gold;
 
- font-size: 1.2rem;
- line-height: 1.5rem;
+ font-size: 1.8rem;
+ line-height: 2rem;
 }
