@@ -1,0 +1,80 @@
+// external .feature-wrap div
+.map {
+  height: 600px;
+  padding: 0;
+}
+
+// map div inside of .map
+#map {
+  height: 100%;
+  cursor: auto;
+}
+
+// remove watermarking
+.leaflet-bottom {
+  visibility: hidden !important;
+}
+
+// map feature blocks
+.map-features {
+  @include f($lexia);
+
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  bottom: 0;
+  flex-direction: column;
+
+  @include bp(medium) {
+    padding: 0 10rem;
+    flex-direction: row;
+  }
+}
+
+a.map__feature {
+  &, &:hover, &:active {
+    color: $black;
+  }
+}
+
+.map__feature {
+  transition: opacity 0.25s ease-in-out,
+              color 0.25s ease-in-out,
+              background 0.25s ease-in-out,
+              border 0.25s ease-in-out;
+
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+
+  flex: 1;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  min-height: 6rem;
+
+  background-color: rgba(255,255,255,0.85);
+  border-bottom: 5px solid rgba(0,0,0,0.2);
+
+  @include bp(medium) {
+    border-radius: 10px 10px 0 0;
+    margin: 0 10px;
+  }
+}
+
+.map__feature:hover,
+.map__feature--active {
+  background-color: rgba(255,255,255,1.0);
+  border-bottom: 5px solid $gold;
+}
+
+.map__feature--active,
+.map__feature--active:hover {
+  background-color: $black;
+  border-color: $black;
+  opacity: 1;
+}
+
+a.map__feature--active {
+  &, &:hover {
+    color: white;
+  }
+}

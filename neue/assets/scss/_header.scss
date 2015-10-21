@@ -1,0 +1,77 @@
+.header {
+  @include span-columns(12);
+  padding: 2rem;
+  text-align: center;
+
+  @include bp(medium) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+}
+
+.header__logo {
+  @include span-columns(12);
+  text-align: center;
+
+  @include bp(medium) {
+    @include span-columns(3);
+  }
+}
+
+.header__body {
+  @include span-columns(12);
+
+  @include bp(medium) {
+    @include span-columns(9);
+  }
+}
+
+.header__headline {
+  @include f($interface);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @include bp(medium) {
+    margin-top: 0;
+  }
+}
+
+.header__tagline {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: $grey;
+}
+
+.header__cta {
+  @include f($interface);
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: $warm-grey;
+  color: white;
+  padding: 0.6rem 0.8rem;
+  display: block;
+
+  box-shadow: 0 4px 0 0 rgba(156, 142, 118, 0.2);
+
+  &:hover {
+    background-color: $warm-grey-light;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 0 0 rgba(156, 142, 118, 0.2);
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 0 rgba(156, 142, 118, 0.2);
+  }
+}
+
+.header__cta-label {
+  @include fw(bold);
+  text-transform: uppercase;
+  padding-right: 0.3rem;
+}

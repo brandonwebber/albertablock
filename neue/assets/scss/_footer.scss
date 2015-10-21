@@ -1,0 +1,90 @@
+.footer {
+  width: 100%;
+  background-color: $black;
+  min-height: 6rem;
+  padding: 2rem 0;
+  color: $grey;
+  line-height: 1.3rem;
+
+  a, a:hover, a:active, a:visited {
+    color: $grey;
+  }
+}
+
+.footer-col {
+  min-height: 4rem;
+  text-align: center;
+  margin: 0.4rem 0;
+
+  @include span-columns(8);
+  @include shift(2);
+
+  @include bp(medium) {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.footer__logo {
+  @include bp(medium) {
+    @include span-columns(1);
+  }
+}
+
+.footer__address {
+  @include bp(medium) {
+    @include span-columns(3);
+  }
+}
+
+.footer__cta {
+  @include bp(medium) {
+    @include span-columns(3);
+    display: flex;
+    align-items: center;
+  }
+
+  .btn {
+    flex: 1;
+  }
+}
+
+.footer-nav {
+  @include bp(medium) {
+    @include span-columns(4);
+    @include shift(1);
+
+    padding-top: 0.3rem;
+    align-items: center;
+  }
+}
+
+.footer__nav {
+  padding: 0;
+
+  @include bp(medium) {
+    text-align: right;
+  }
+
+  li {
+    list-style-type: none;
+
+    @include bp(medium) {
+      display: inline;
+      margin-left: 2rem;
+    }
+  }
+
+  a {
+    @include f($interface);
+    @include fw(bold);
+
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    &:hover, &:active, &:focus {
+      color: white;
+    }
+  }
+}

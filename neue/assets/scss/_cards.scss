@@ -1,0 +1,56 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+
+  @include bp(medium) {
+    flex-direction: row;
+  }
+}
+
+.card {
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-position: 100% 200%;
+  background-repeat: no-repeat;
+
+  @include bp(medium) {
+    min-height: 200px;
+    margin-bottom: 0;
+    margin-right: 1rem;
+    width: 24%;
+    background-position: 120% 120%;
+  }
+
+  p {
+    line-height: 1.5rem;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover, &:active {
+    color: $black;
+    background-color: white;
+  }
+}
+
+.card--buoy {
+  background-image: url('../img/lifebuoy.svg');
+}
+
+.card--wrench {
+  background-image: url('../img/wrench.svg');
+}
+
+.card--people {
+  background-image: url('../img/people.svg');
+}
+
+.card--info {
+  background-image: url('../img/info.svg');
+}

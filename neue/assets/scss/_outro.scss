@@ -1,0 +1,25 @@
+.feature--outro {
+  display: inline-block;
+}
+
+.outro {
+  @include span-columns(10);
+  @include shift(1);
+  text-align: center;
+  padding: 2rem 0 3rem;
+
+  @include bp(medium) {
+    @include span-columns(6);
+    @include shift(3);
+  }
+}
+
+.outro__divider {
+  outline: none;
+  border: none;
+
+  height: 4px;
+  width: 15%;
+  margin-bottom: 2rem;
+  background: #E2DDD8;
+}
