@@ -4,13 +4,25 @@ body {
 
 .l-site {
   background: $beige;
-  margin: 0 5px;
+  margin: 0;
 
   @include bp(medium) {
-    margin: 0 50px;
+    margin: 0;
+  }
+
+  @include bp(medium-large) {
+    margin: 0 40px;
+  }
+
+  @include bp(large) {
+    margin: 0 60px;
   }
 }
 
 .container {
   @include outer-container;
+
+  @include bp(medium) {
+    padding: 0 30px;
+  }
 }

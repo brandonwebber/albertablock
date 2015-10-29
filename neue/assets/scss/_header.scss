@@ -1,43 +1,18 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   text-align: center;
   background: $beige;
   border-bottom: 4px solid $black;
   z-index: 20;
 
-
-
-  &.is-scrolled {
-    .header__logo {
-      padding: 1rem 0;
-
-      a {
-        height: 30px;
-        display: block;
-      }
-    }
-  }
-
   @include bp(medium) {
     left: 50px;
     right: 50px;
-
-    &.is-scrolled {
-      .header__logo {
-        a {
-          height: 50px;
-        }
-      }
-    }
   }
 }
 
 .header__logo {
   display: inline-block;
-  padding: 3rem 0;
+  padding: 1rem 0;
   @include transition(all 0.5s $ease-in-out-quad);
 
   a {
@@ -51,6 +26,8 @@
   }
 
   @include bp(medium) {
+    padding: 3rem 0;
+
     a {
       height: 70px;
     }

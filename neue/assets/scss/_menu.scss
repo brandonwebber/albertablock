@@ -1,5 +1,5 @@
 .menu {
-  margin: 0 0 40px;
+  margin: 0 20px 40px;
 
   @include bp(medium) {
     margin: 0;
@@ -17,7 +17,6 @@
   padding: 0;
   list-style: none;
   display: block;
-  text-align: center;
 }
 
 .menu-link {
@@ -26,5 +25,13 @@
   display: block;
   color: $black;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  @include f($lexia);
+}
+
+
+.menu__footer {
+  margin: 0;
 }

@@ -5,15 +5,16 @@
 
 // map div inside of .map
 #map {
-  height: 600px;
+  height: 300px;
   cursor: auto;
-}
 
-.feature-wrap  {
-  background: $black;
+  @include bp(medium) {
+    height: 600px;
+  }
 }
 
 .map-content {
+  background: $black;
   padding: 3rem 0;
 }
 
@@ -24,7 +25,7 @@
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2rem;
-  margin-bottom: 0;
+  margin: 0 0 3rem;
 }
 
 .map-features {
@@ -33,6 +34,7 @@
 
 .map__feature {
   padding: 0 20px;
+  border-top: 4px solid $gold;
 
   p {
     color: white;

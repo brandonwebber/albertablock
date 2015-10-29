@@ -2,89 +2,65 @@
   width: 100%;
   background-color: $black;
   min-height: 6rem;
-  padding: 3rem 0;
-  color: $grey;
+  padding: 2rem 0;
+  color: white;
   line-height: 1.3rem;
+  @include clearfix;
+  text-align: center;
 
   a, a:hover, a:active, a:visited {
-    color: $grey;
+    color: white;
   }
-}
-
-.footer-col {
-  min-height: 4rem;
-  text-align: center;
-  margin: 0.4rem 0;
-
-  @include span-columns(8);
-  @include shift(2);
 
   @include bp(medium) {
-    margin: 0;
+    padding: 4rem 0;
     text-align: left;
   }
 }
 
 .footer__logo {
+
+  img {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
   @include bp(medium) {
-    @include span-columns(1);
+    margin-right: 10%;
+    float: left;
+    width: 15%;
+
+    img {
+      width: 100%;
+      margin: 0;
+    }
   }
 }
 
 .footer__address {
-  @include bp(medium) {
-    @include span-columns(3);
-  }
-}
+  @include fs(18px);
+  line-height: 1.6;
 
-.footer__cta {
-  @include bp(medium) {
-    @include span-columns(3);
-    display: flex;
-    align-items: center;
+  a {
+    display: inline-block;
+    padding-top: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid $gold;
   }
 
-  .btn {
-    flex: 1;
-  }
-}
-
-.footer-nav {
   @include bp(medium) {
-    @include span-columns(4);
-    @include shift(1);
-
-    padding-top: 0.3rem;
-    align-items: center;
+    float: left;
+    width: 30%;
+    padding: 25px 0;
   }
 }
 
 .footer__nav {
-  padding: 0;
+  padding: 20px 0 0;
 
   @include bp(medium) {
-    text-align: right;
-  }
-
-  li {
-    list-style-type: none;
-
-    @include bp(medium) {
-      display: inline;
-      margin-left: 2rem;
-    }
-  }
-
-  a {
-    @include f($interface);
-    @include fw(bold);
-
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
-
-    &:hover, &:active, &:focus {
-      color: white;
-    }
+    float: right;
+    padding: 1.5rem 0;
   }
 }

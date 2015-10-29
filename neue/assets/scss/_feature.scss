@@ -1,17 +1,27 @@
 .feature-wrap {
   width: 100%;
-  background: $black;
+  // background: $black;
   @include clearfix;
 }
 
-.feature__image,
-.feature__content {
+.feature__image {
   display: block;
   height: 600px;
 
   @include bp(medium) {
     width: 50%;
-    height: 600px;
+    height: 700px;
+    float: left;
+    display: block;
+  }
+}
+
+.feature__content {
+  display: block;
+
+  @include bp(medium) {
+    width: 50%;
+    height: 700px;
     float: left;
     display: block;
   }
@@ -41,20 +51,35 @@
 }
 
 .feature {
-  position: relative;
-  top: 50%;
-  @include transform(translateY(-50%));
-  padding: 2rem 4rem;
-  @include fs(18px);
-  line-height: 1.4rem;
-  color: white;
+  margin: 20px 0;
+  padding: 1rem;
+
+  p {
+    @include fs(16px);
+    line-height: 1.6rem;
+  }
+
+  @include bp(medium) {
+    border-top: 4px solid $black;
+    border-bottom: 4px solid $black;
+    margin: 0 2rem;
+    padding: 2rem 0;
+    position: relative;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+
+  @include bp(medium-large) {
+    margin: 0 4rem;
+    padding: 2rem;
+  }
 }
 
 
 .feature__heading {
- font-style: italic;
- color: $gold;
-
- font-size: 1.8rem;
- line-height: 2rem;
+  font-style: italic;
+  color: $gold;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 200;
 }
