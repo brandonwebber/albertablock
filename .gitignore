@@ -38,7 +38,8 @@ Thumbs.db
 Desktop.ini
 
 # Front-end files
-node_modules
+neue/node_modules
+neue/bower_components
 raw/bower
 .sass-cache
 

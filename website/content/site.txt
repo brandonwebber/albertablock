@@ -1,0 +1,13 @@
+Title: Alberta Block Building
+----
+Author: Brandon Webber
+----
+Description:
+----
+Keywords: Alberta Block,Edmonton
+----
+Copyright: © 2009-(date: Year) (link: http://albertablock.com text: Alberta Block)
+----
+Alert-text: INVITE: Open house this Saturday, brought to you by Homestead!
+----
+Alert-link: http://google.com

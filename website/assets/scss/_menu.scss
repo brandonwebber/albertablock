@@ -1,0 +1,42 @@
+.menu {
+  margin: 0 20px 40px;
+
+  @include bp(medium) {
+    margin: 0;
+  }
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+.menu-link {
+  @include f($lexia);
+  margin: 0;
+  padding: 2px 0 17px 0;
+  display: block;
+  color: $black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  span:hover {
+    border-bottom: 2px solid $gold;
+  }
+}
+
+.menu__footer {
+  nav {
+    margin: 0;
+  }
+}

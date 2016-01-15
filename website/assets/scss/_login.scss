@@ -1,0 +1,17 @@
+.login {
+
+  @include span-columns(12);
+  margin-bottom: 2em;
+
+  .alert {
+    background-color: $red;
+    color: $white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @include bp(medium) {
+    @include span-columns(5);
+    padding: 0;
+  }
+}

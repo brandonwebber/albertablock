@@ -1,0 +1,13 @@
+{
+  "name": "alberta-block",
+  "version": "1.0.0",
+  "description": "Website for Alberta Block, Edmonton, Alberta, Canada",
+  "scripts": {
+    "start": "node-sass assets/scss/app.scss --output assets/css --watch assets/scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  }
+}

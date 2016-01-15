@@ -1,0 +1,5 @@
+Title: Inquiries
+----
+AnonymousText: Hello, anonymous. Please use the form below to contact us.
+----
+TenantText: Hello, tenant. Please use the form below to contact us.

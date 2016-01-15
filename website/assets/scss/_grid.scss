@@ -1,0 +1,45 @@
+body {
+  background: $beige;
+}
+
+.l-site {
+  background: $beige;
+  margin: 0;
+
+  @include bp(medium) {
+    margin: 0;
+  }
+
+  @include bp(medium-large) {
+    margin: 0 40px;
+  }
+
+  @include bp(large) {
+    margin: 0 60px;
+  }
+}
+
+.container {
+  @include outer-container;
+  padding: 0 1rem;
+
+  @include bp(medium) {
+    padding: 0 30px;
+  }
+}
+
+.page {
+  border-top: 4px solid $black;
+  padding: 0 1rem;
+
+  h2 {
+    @include f($interface);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3.3rem;
+  }
+
+  @include bp(medium) {
+    padding: 2rem 1rem;
+  }
+}
