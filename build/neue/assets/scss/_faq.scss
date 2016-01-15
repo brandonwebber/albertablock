@@ -1,0 +1,16 @@
+.faq {
+  margin-top: 2rem;
+}
+
+.faq-item {
+  padding: 1rem 3rem 1rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  line-height: 2rem;
+  background: url('../img/arrow-down.svg') no-repeat 98% center;
+}
+
+.faq__list {
+  a:last-child .faq-item {
+    border-bottom: 0;
+  }
+}

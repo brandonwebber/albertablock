@@ -1,0 +1,63 @@
+.intro {
+  padding: 40px 0;
+  // background: white;
+
+  @include bp(medium) {
+    padding: 80px 0;
+  }
+}
+
+.intro__menu {
+  @include bp(medium) {
+    @include span-columns(4);
+  }
+}
+
+.intro__body {
+  padding: 0 20px;
+
+  @include bp(medium) {
+    padding: 0;
+    @include span-columns(8);
+  }
+}
+
+.intro__headline {
+  @include f($interface);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @include bp(medium) {
+    margin-top: 0;
+  }
+}
+
+.intro__tagline {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: $grey;
+}
+
+.intro__cta {
+  margin: 50px 0 0;
+  @include f($interface);
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: $gold;
+  border: 2px solid $gold;
+  padding: 1rem 2rem;
+  display: block;
+  @include transition(all 0.35s $ease-in-out-quad);
+
+  &:hover {
+    background-color: $gold;
+    color: white;
+  }
+}
+
+.intro__cta-label {
+  @include fw(bold);
+  text-transform: uppercase;
+  padding-right: 0.3rem;
+}

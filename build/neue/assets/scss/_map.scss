@@ -1,0 +1,48 @@
+// external .feature-wrap div
+.map {
+  padding: 0;
+}
+
+// map div inside of .map
+#map {
+  height: 300px;
+  cursor: auto;
+
+  @include bp(medium) {
+    height: 600px;
+  }
+}
+
+.map-content {
+  background: $black;
+  padding: 3rem 0;
+}
+
+.map-heading {
+  text-align: center;
+  font-style: italic;
+  color: $gold;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin: 0 0 3rem;
+}
+
+.map-features {
+  @include outer-container();
+}
+
+.map__feature {
+  padding: 0 20px;
+  border-top: 4px solid $gold;
+
+  p {
+    color: white;
+    line-height: 1.5rem;
+  }
+
+  @include bp(medium) {
+    padding: 0;
+    @include span-columns(4);
+  }
+}

@@ -1,0 +1,107 @@
+.tenants {
+  padding: 0 1rem;
+
+  @include bp(medium) {
+    padding: 0;
+  }
+}
+
+.tenants__head {
+  @include f($interface);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+
+  h3 {
+    background-color: $beige;
+    z-index: 2;
+    padding-right: 20px;
+    display: inline-block;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: rgba(50, 49, 50, 0.17);
+    position: absolute;
+    top: 1.6rem;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.tenants__nav {
+  a {
+    @include f($interface);
+    color: $black;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 1rem;
+    opacity: 0.5;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: 0.85;
+    }
+
+    &.active {
+      opacity: 1.0;
+      border-bottom: 2px solid $black;
+      padding-bottom: 2px;
+    }
+  }
+}
+
+.tenants__grid {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+.tenant {
+  @include span-columns(12);
+  margin-bottom: 2rem;
+
+  @include bp(medium) {
+    @include span-columns(4);
+    margin-right: 0;
+    min-height: 10rem;
+  }
+}
+
+.tenant__title,
+.tenant__desc,
+.tenant__meta {
+  margin: 0;
+  line-height: 1.35rem;
+}
+
+.tenant__title {
+  @include f($interface);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.tenant__desc {
+  opacity: 0.6;
+  font-style: oblique;
+  padding-right: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.tenant__meta {
+  margin-top: 1rem;
+}

@@ -1,0 +1,55 @@
+/**
+ * fw($weight)
+ *
+ * Used to determine font weights, rather than dealing with 400/700
+ * directly. Just in case the typeface's setting for regular/bold
+ * changes.
+ */
+@mixin fw($weight) {
+  @if $weight == regular { font-weight: 400; }
+  @if $weight == bold { font-weight: 700; }
+}
+
+/**
+ * bp($size)
+ *
+ * Used to create media queries for the different breakpoints. Given
+ * parameter can be small, medium, medium-large, and large.
+ */
+@mixin bp($size) {
+  @if $size == small {
+    @include media(480px) { @content; }
+  } @else if $size == medium {
+    @include media(768px) { @content; }
+  } @else if $size == medium-large {
+    @include media(1024px) { @content; }
+  } @else if $size == large {
+    @include media(1280px) { @content; }
+  } @else {
+    @include media($size) { @content; }
+  }
+}
+
+/**
+ * fs($size)
+ *
+ * Used to determine font sizing. Sets font-size to given value up until
+ * medium-large breakpoint, and then adds 1 to it to make up for larger
+ * screen size.
+ */
+@mixin fs($size) {
+  font-size: $size;
+
+  @include bp(medium-large) {
+    font-size: $size + 1;
+  }
+}
+
+/**
+ * f($font)
+ *
+ * Used for setting the font properly.
+ */
+@mixin f($font) {
+  font-family: $font, 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
+}

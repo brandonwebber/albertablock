@@ -1,0 +1,28 @@
+body {
+  background: $beige;
+}
+
+.l-site {
+  background: $beige;
+  margin: 0;
+
+  @include bp(medium) {
+    margin: 0;
+  }
+
+  @include bp(medium-large) {
+    margin: 0 40px;
+  }
+
+  @include bp(large) {
+    margin: 0 60px;
+  }
+}
+
+.container {
+  @include outer-container;
+
+  @include bp(medium) {
+    padding: 0 30px;
+  }
+}

@@ -1,0 +1,66 @@
+.footer {
+  width: 100%;
+  background-color: $black;
+  min-height: 6rem;
+  padding: 2rem 0;
+  color: white;
+  line-height: 1.3rem;
+  @include clearfix;
+  text-align: center;
+
+  a, a:hover, a:active, a:visited {
+    color: white;
+  }
+
+  @include bp(medium) {
+    padding: 4rem 0;
+    text-align: left;
+  }
+}
+
+.footer__logo {
+
+  img {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  @include bp(medium) {
+    margin-right: 10%;
+    float: left;
+    width: 15%;
+
+    img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+.footer__address {
+  @include fs(18px);
+  line-height: 1.6;
+
+  a {
+    display: inline-block;
+    padding-top: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid $gold;
+  }
+
+  @include bp(medium) {
+    float: left;
+    width: 30%;
+    padding: 25px 0;
+  }
+}
+
+.footer__nav {
+  padding: 20px 0 0;
+
+  @include bp(medium) {
+    float: right;
+    padding: 1.5rem 0;
+  }
+}

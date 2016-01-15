@@ -1,0 +1,10 @@
+.hero {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background: url('../img/hero.jpg') no-repeat center bottom / cover, $black;
+
+  @include bp(medium) {
+    height: 85vh;
+  }
+}

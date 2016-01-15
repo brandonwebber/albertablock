@@ -1,0 +1,88 @@
+.header {
+  text-align: center;
+  background: $beige;
+  border-bottom: 4px solid $black;
+  z-index: 20;
+
+  @include bp(medium) {
+    left: 50px;
+    right: 50px;
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  padding: 1rem 0;
+  @include transition(all 0.5s $ease-in-out-quad);
+
+  a {
+    height: 50px;
+    display: block;
+    @include transition(all 0.5s $ease-in-out-quad);
+  }
+
+  svg {
+    height: 100%;
+  }
+
+  @include bp(medium) {
+    padding: 3rem 0;
+
+    a {
+      height: 70px;
+    }
+  }
+}
+
+.header__body {
+
+}
+
+.header__headline {
+  @include f($interface);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @include bp(medium) {
+    margin-top: 0;
+  }
+}
+
+.header__tagline {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: $grey;
+}
+
+.header__cta {
+  @include f($interface);
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: $warm-grey;
+  color: white;
+  padding: 0.6rem 0.8rem;
+  display: block;
+
+  box-shadow: 0 4px 0 0 rgba(156, 142, 118, 0.2);
+
+  &:hover {
+    background-color: $warm-grey-light;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 0 0 rgba(156, 142, 118, 0.2);
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 0 rgba(156, 142, 118, 0.2);
+  }
+}
+
+.header__cta-label {
+  @include fw(bold);
+  text-transform: uppercase;
+  padding-right: 0.3rem;
+}

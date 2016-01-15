@@ -1,0 +1,33 @@
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  text-decoration: none;
+
+  &:hover {
+    background-color: white;
+    border-color: transparent;
+  }
+}
+
+.btn-outline--footer {
+  transition: none;
+  border-color: $grey;
+
+  &:hover {
+    .btn-outline__arrow {
+      background-position-y: 100%;
+    }
+  }
+}
+
+.btn-outline__arrow {
+  transition: none;
+  float: right;
+  margin-top: 5px;
+  background: url('../img/arrow1.svg') no-repeat;
+  width: 12px;
+  height: 10px;
+
+  display: inline-block;
+}
