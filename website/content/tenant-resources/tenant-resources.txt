@@ -7,3 +7,55 @@ Heading: Tenant Resources
 ----
 
 Blurb: 
+
+----
+
+Info: 
+
+### When we’re moving items into the building, when is a good time?
+Mornings are best. If you are moving lots of things, please contact the property manager to arrange a time.
+
+### When there is an emergency, who should we contact?
+You should always contact City of Edmonton emergency services first at 911. The property manager should be notified second.
+
+### I have a dispute with a neighbour. What should I do?
+If you have a disagreement with a neighbouring tenant, contact the tenant to discuss. If the dispute cannot be resolved, please contact the property manager.
+
+### I’ve misplaced my access card or keys to the building.
+You can contact the property manager to access the building within 24 hours. There is a $30 replacement charge for cards or keys.
+
+----
+
+Property-manager: Cornerstone
+
+----
+
+Pm-lead-contact: Tim Fletcher
+
+----
+
+Pm-office-phone: 123.123.1234
+
+----
+
+Pm-direct-phone: 123.123.1235
+
+----
+
+Pm-email: foo@bar.com
+
+----
+
+Emergency-contacts: 
+
+**Fire: 911**  
+**Security (Telsco): (780) 777-3322**
+
+----
+
+Pm-contacts: 
+
+**Lead Contact: Tim Fletcher**
+Office: 123.123.1234
+Direct: 123.123.1235
+Email: [foo@bar.com](mailto:foo@bar.com)

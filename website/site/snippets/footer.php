@@ -1,7 +1,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__logo">
-        <img src="assets/img/logo-white.svg" alt="">
+        <img src="/assets/img/logo-white.svg" alt="">
       </div>
 
       <div class="footer__address">
@@ -21,6 +21,7 @@
 
 <?php echo js('assets/js/jquery-2.1.4.min.js') ?>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCRCGAocujzvEdoSctUwJpiz4T6T2nMiM&amp"></script>
+<?php echo js('assets/js/jquery.bxslider.min.js') ?>
 <?php echo js('assets/js/app.js') ?>
 <?php echo $page->isHomePage() ? js('assets/js/map.js') : '' ?>
 </body>

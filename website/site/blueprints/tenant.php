@@ -5,7 +5,7 @@ pages: false
 files:
   sortable: true
 fields:
-  name:
+  title:
     label: Name
     type:  text
   publicemail:

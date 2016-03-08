@@ -13,7 +13,7 @@ return function($site, $pages, $page) {
     if($user = $site->user(get('username')) and $user->login(get('password'))) {
       // redirect to the homepage
       // if the login was successful
-      go('/');
+      go('/tenant-resources');
     } else {
       // make sure the alert is being
       // displayed in the template

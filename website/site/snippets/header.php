@@ -25,17 +25,19 @@
     <div class="header">
       <div class="container">
 
-        <?php if($user = $site->user()): ?>
           <div class="user">
-            Logged in as <?php echo $user->firstName() ?>
-            <?php if($user->hasRole('admin')): ?>
+            <?php if($user = $site->user()): ?>
+              Logged in as <?php echo $user->firstName() ?>
+              <?php if($user->hasRole('admin')): ?>
+                &bull;
+                <a href="/panel">Admin</a>
+              <?php endif ?>
               &bull;
-              <a href="panel">Admin</a>
+              <a href="logout">Logout</a>
+            <?php else: ?>
+              <a href="/login">Client Login</a>
             <?php endif ?>
-            &bull;
-            <a href="logout">Logout</a>
           </div>
-        <?php endif ?>
 
         <div class="header__logo">
           <a href="<?php echo url() ?>">

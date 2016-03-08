@@ -4,25 +4,16 @@
   @include clearfix;
 }
 
-.outro__image {
-  display: block;
-
-  @include bp(medium) {
-    width: 50%;
-    height: 700px;
-    float: left;
-    display: block;
-  }
-}
-
 .outro__content {
+    padding: 50px 15px;
   display: block;
 
   @include bp(medium) {
-    width: 50%;
-    height: 700px;
-    float: left;
-    display: block;
+    padding: 100px 15px;
+  }
+
+  @include bp(medium-large) {
+    padding: 100px 0;
   }
 }
 
@@ -31,47 +22,58 @@
   text-align: center;
 
   img {
-    display: inline-block;
+    display: block;
     width: 90%;
+    margin: 0 auto 50px auto;
   }
 
   @include bp(medium) {
     img {
-      position: relative;
-      top: 50%;
-      @include transform(translateY(-50%));
+      max-width: 1000px;
+      width: 80%;
     }
   }
 }
 
 .outro {
-  margin: 20px 0;
-  padding: 1rem;
+  margin: 0;
+  text-align: center;
 
   p {
     @include fs(16px);
     line-height: 1.6rem;
   }
 
-  @include bp(medium) {
-    border-top: 4px solid $black;
-    border-bottom: 4px solid $black;
-    margin: 0 2rem;
-    padding: 2rem 0;
-    position: relative;
-    top: 50%;
-    @include transform(translateY(-50%));
+  .break {
+    width: 50%;
+    background-color: $black;
+    height: 5px;
+    margin: 0 auto 50px auto;
+  }
+
+  &.last {
+    margin-bottom: 0;
+    p {
+      margin-bottom: 0;
+    }
+
+    @include bp(medium) {
+      margin-top: 80px;
+    }
   }
 
   @include bp(medium-large) {
-    margin: 0 4rem;
-    padding: 2rem;
+    max-width: 820px;
+    width: 100%;
+    margin: 0 auto 40px auto;
   }
 }
 
 .outro__heading {
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 1.4375rem;
   line-height: 2rem;
   font-weight: 200;
+  max-width: 650px;
+  margin: 0 auto 1.4em auto;
 }

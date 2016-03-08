@@ -7,10 +7,10 @@ password: >
 language: en
 role: admin
 history:
-  - faq
-  - tenants/tim-fletcher
   - tenant-resources
-  - tenants/another-one
-  - tenants/brandon-webber
+  - tenants/mr-barber-shop
+  - tenants/the-needle-vinyl-tavern
+  - pages/info
+  - tenant-resources/energy-efficiency-guide
 firstname: Tim
 lastname: Fletcher

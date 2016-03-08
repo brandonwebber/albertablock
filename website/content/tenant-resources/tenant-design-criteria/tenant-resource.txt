@@ -1,0 +1,13 @@
+Title: Tenant Design Criteria
+
+----
+
+Heading: Test
+
+----
+
+Blurb: 
+
+----
+
+Description: Guidelines for tenant improvements in Alberta Block.

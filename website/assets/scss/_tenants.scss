@@ -1,4 +1,13 @@
 .tenants {
+
+h1 {
+  @include f($interface);
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+
+
 }
 
 // .tenants__head {
@@ -54,6 +63,7 @@
 //   }
 // }
 
+
 .tenants__grid {
   border-bottom: 4px solid $black;
   margin-bottom: 4rem;
@@ -102,12 +112,18 @@
   line-height: 1.35rem;
 }
 
+.tenant__image {
+  width: 100%;
+  border: 3px solid $gold;
+  margin-bottom: 1em;
+}
+
 .tenant__title {
-  @include f($interface);
+  @include f($lexia);
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .tenant__desc {

@@ -3,7 +3,7 @@
     <ul class="menu-list">
 
       <li class="menu-item">
-        <a href="/directory" class="menu-link">
+        <a href="/tenants" class="menu-link">
           <span>Directory</span>
         </a>
       </li>

@@ -1,14 +1,16 @@
 .intro {
   padding: 40px 0;
-  // background: white;
+  text-align: center;
 
   @include bp(medium) {
     padding: 80px 0;
+    text-align: left;
   }
 }
 
 .intro__menu {
   @include bp(medium) {
+    padding: 0;
     @include span-columns(4);
   }
 }

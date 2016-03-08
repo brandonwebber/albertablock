@@ -30,7 +30,7 @@
 
 .header__logo {
   display: inline-block;
-  padding: 1rem 0;
+  padding: 2.5rem 0 2em 0;
   @include transition(all 0.5s $ease-in-out-quad);
 
   a {
@@ -44,10 +44,9 @@
   }
 
   @include bp(medium) {
-    padding: 3rem 0;
 
     a {
-      height: 70px;
+      height: 85px;
     }
   }
 }

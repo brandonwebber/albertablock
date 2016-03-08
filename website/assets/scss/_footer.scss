@@ -22,25 +22,26 @@
 
   img {
     display: inline-block;
-    width: 100px;
+    width: 50px;
+    margin-top: 25px;
     margin-bottom: 20px;
   }
 
   @include bp(medium) {
     margin-right: 10%;
     float: left;
-    width: 15%;
+    width: 20%;
 
     img {
-      width: 100%;
-      margin: 0;
+      width: 90px;
+      margin: 19px 10px 0 100px;
     }
   }
 }
 
 .footer__address {
-  @include fs(18px);
   line-height: 1.6;
+  margin-bottom: 20px;
 
   a {
     display: inline-block;
@@ -51,13 +52,18 @@
 
   @include bp(medium) {
     float: left;
-    width: 30%;
+    width: 25%;
     padding: 25px 0;
+    margin: 0;
   }
 }
 
 .footer__nav {
   padding: 20px 0 0;
+
+  .intro__menu .menu-link {
+    @include fs(21px);
+  }
 
   @include bp(medium) {
     float: right;

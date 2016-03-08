@@ -1,0 +1,13 @@
+Title: Some News Article
+
+----
+
+Heading: 
+
+----
+
+Blurb: 
+
+----
+
+Text: This is an article.

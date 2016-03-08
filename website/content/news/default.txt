@@ -1,0 +1,13 @@
+Title: News
+
+----
+
+Heading: 
+
+----
+
+Blurb: 
+
+----
+
+Text: 

@@ -2,7 +2,7 @@
 
 body {
   @include f($lexia);
-  @include fs(13px);
+  @include fs(15px);
 
   background-color: $beige;
   color: $black;

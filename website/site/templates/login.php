@@ -6,7 +6,7 @@
   <div class="login">
 
     <?php if($error): ?>
-    <div class="alert"><?php echo $page->alert()->html() ?></div>
+      <div class="alert"><?php echo $page->alert()->html() ?></div>
     <?php endif ?>
 
     <form method="post" class="form">
@@ -23,7 +23,6 @@
       </div>
     </form>
   </div>
-
 </div>
 
 

@@ -29,4 +29,15 @@
 
   scrolling();
   window.addEventListener('scroll', scrolling);
+
+  $('.hero').bxSlider({
+    auto: true,
+    speed: 1000,
+  });
+
+  var count = $('.bx-pager-item').length;
+  if (count === 1) {
+    $('.bx-pager').hide();
+  }
+
 })();

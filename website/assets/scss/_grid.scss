@@ -3,34 +3,35 @@ body {
 }
 
 .l-site {
+  @include outer-container(1180px);
   background: $beige;
-  margin: 0;
+  margin: 0 auto;
 
   @include bp(medium) {
-    margin: 0;
+    // margin: 0;
   }
 
   @include bp(medium-large) {
-    margin: 0 40px;
+    // margin: 0 40px;
   }
 
   @include bp(large) {
-    margin: 0 60px;
+    // margin: 0 60px;
   }
 }
 
 .container {
-  @include outer-container;
-  padding: 0 1rem;
+  @include outer-container(990px);
+  padding: 0 15px;
 
-  @include bp(medium) {
-    padding: 0 30px;
+  @include bp(medium-large) {
+    padding: 0;
   }
 }
 
 .page {
   border-top: 4px solid $black;
-  padding: 0 1rem;
+  // padding: 0 1rem;
 
   h2 {
     @include f($interface);
@@ -40,6 +41,6 @@ body {
   }
 
   @include bp(medium) {
-    padding: 2rem 1rem;
+    padding: 2rem 30px;
   }
 }

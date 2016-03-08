@@ -3,9 +3,6 @@
 *.egg*
 local_dev.py
 
-# Sphinx Docs
-build
-
 # Temporary files
 *.swp
 *.swo
@@ -38,8 +35,8 @@ Thumbs.db
 Desktop.ini
 
 # Front-end files
-neue/node_modules
-neue/bower_components
+build/neue/node_modules
+build/neue/bower_components
 raw/bower
 .sass-cache
 

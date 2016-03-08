@@ -1,9 +1,29 @@
-title: Login
+Title: Login
+
 ----
-alert: Invalid username or password
+
+Alert: Invalid username or password
+
 ----
-username: Username
+
+Username: Username
+
 ----
-password: Password
+
+Password: Password
+
 ----
-button: Login
+
+Button: Login
+
+----
+
+Heading: 
+
+----
+
+Blurb: 
+
+----
+
+Text: fdsfdsf

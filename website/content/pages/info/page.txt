@@ -1,4 +1,12 @@
-Title: FAQ
+Title: Info
+
+----
+
+Heading: 
+
+----
+
+Blurb: 
 
 ----
 
@@ -15,11 +23,3 @@ If you have a disagreement with a neighbouring tenant, contact the tenant to dis
 
 ### I’ve misplaced my access card or keys to the building.
 You can contact the property manager to access the building within 24 hours. There is a $30 replacement charge for cards or keys.
-
-----
-
-Heading: This is the FAQ Page
-
-----
-
-Blurb: Blurbbbb
