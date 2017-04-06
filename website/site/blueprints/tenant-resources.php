@@ -12,9 +12,6 @@ fields:
   blurb:
     label: Blurb
     type:  textarea
-  info:
-    label: Info
-    type:  textarea
   property_manager:
     label: Property Manager
     type:  text
@@ -23,4 +20,7 @@ fields:
     type:  textarea
   emergency_contacts:
     label: Emergency Contacts
+    type:  textarea
+  info:
+    label: Info
     type:  textarea

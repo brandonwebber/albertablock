@@ -1,4 +1,4 @@
-mailto:service@albertablock.com?subject=New Alberta Block Service Request&body=Hi,
+mailto:support@redbrickinc.ca?subject=New Alberta Block Service Request&body=Hi,
 %0D%0A%0D%0A
 To complete your service request, please complete the fields below:
 %0D%0A%0D%0A
